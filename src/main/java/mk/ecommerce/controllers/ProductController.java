@@ -15,7 +15,7 @@ import org.springframework.web.bind.annotation.RestController;
 import java.util.List;
 
 @RestController
-@CrossOrigin(origins = "https://react-ecommerce-front-chi.vercel.app/")
+@CrossOrigin(origins = "https://react-ecommerce-front-chi.vercel.app")
 public class ProductController {
 
   private static final Logger logger = LoggerFactory.getLogger(ProductController.class);
