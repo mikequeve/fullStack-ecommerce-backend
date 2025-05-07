@@ -9,5 +9,5 @@ public interface IProductService {
   List<Product> showProducts();
   Product findProductById(Integer productId);
   List<Product> findProductsByCategoryId(Integer categoryId);
-  List<Product> findRecentProducts(Integer startDate);
+  List<Product> findRecentProducts();
 }

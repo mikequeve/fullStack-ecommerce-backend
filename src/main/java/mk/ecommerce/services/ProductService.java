@@ -5,7 +5,6 @@ import mk.ecommerce.repositories.ProductRepository;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
-import java.time.LocalDateTime;
 import java.util.List;
 
 @Service
@@ -32,9 +31,7 @@ public class ProductService implements IProductService{
   }
 
   @Override
-  public List<Product> findRecentProducts(Integer days) {
-    LocalDateTime startDate = LocalDateTime.now().minusDays(days);
-    List<Product> products = productRepository.findRecentProducts(startDate);
-    return products;
+  public List<Product> findRecentProducts() {
+    return productRepository.findRecentProducts();
   }
 }

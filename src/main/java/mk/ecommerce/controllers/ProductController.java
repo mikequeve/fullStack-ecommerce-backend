@@ -47,8 +47,7 @@ public class ProductController {
 
   @GetMapping("/products/recent")
   public ResponseEntity<List<Product>> getRecentProducts(){
-    List<Product> products = productService.findRecentProducts(15);
+    List<Product> products = productService.findRecentProducts();
     return ResponseEntity.ok(products);
   }
-
 }
